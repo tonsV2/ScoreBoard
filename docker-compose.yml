@@ -6,8 +6,8 @@ services:
     ports:
      - "80:8080"
     links:
-     - mysql
-  mysql:
+     - mariadb
+  mariadb:
     image: mariadb
     container_name: scoreboard-db
     environment:
