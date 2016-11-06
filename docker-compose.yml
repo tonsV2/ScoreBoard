@@ -2,9 +2,7 @@ version: '2'
 services:
   scoreboard:
     container_name: scoreboard
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     ports:
      - "80:8080"
     links:
